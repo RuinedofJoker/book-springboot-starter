@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
-@ConditionalOnClass
+@ConditionalOnClass(BookProperties.class)
 @EnableConfigurationProperties(BookProperties.class)
 public class BookAutoConfiguration {
     private BookProperties bookProperties;
